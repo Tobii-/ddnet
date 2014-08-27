@@ -3,6 +3,10 @@
 #include "SDL_opengl.h"
 #include <base/detect.h>
 
+#if defined(CONF_FAMILY_WINDOWS)
+#include <stdlib.h>
+#endif
+
 #if defined(CONF_PLATFORM_MACOSX)
 #include <OpenGL/glu.h>
 #else

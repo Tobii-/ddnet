@@ -118,10 +118,10 @@ server_sql_depends = {}
 if family == "windows" then
 	if platform == "win32" then
 		table.insert(client_depends, CopyToDirectory(".", "other\\freetype\\lib32\\freetype.dll"))
-		table.insert(client_depends, CopyToDirectory(".", "other\\sdl2\\lib32\\SDL.dll"))
+		table.insert(client_depends, CopyToDirectory(".", "other\\sdl2\\lib32\\SDL2.dll"))
 	else
 		table.insert(client_depends, CopyToDirectory(".", "other\\freetype\\lib64\\freetype.dll"))
-		table.insert(client_depends, CopyToDirectory(".", "other\\sdl2\\lib64\\SDL.dll"))
+		table.insert(client_depends, CopyToDirectory(".", "other\\sdl2\\lib64\\SDL2.dll"))
 	end
 	table.insert(server_sql_depends, CopyToDirectory(".", "other\\mysql\\vc2005libs\\mysqlcppconn.dll"))
 	table.insert(server_sql_depends, CopyToDirectory(".", "other\\mysql\\vc2005libs\\libmysql.dll"))
